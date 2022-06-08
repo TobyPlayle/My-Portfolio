@@ -19,23 +19,50 @@ main {
 }
 
 
-#homeWrap {
+#wholeWrap {
     display: flex;
     align-items: center;
 }
 
 #homeText {
-    
+    display: block;
     padding-left: 10px
 }
 
 #homeText h2 {
-    margin-bottom: 2%;
+    margin-bottom: 5px;
 }
 
 #homeText h1 {
     font-size: 4rem;
     margin: 0;
+}
+
+#aboutMeText {
+    display: none;
+    padding-left: 10px;
+    max-width: 624px;
+}
+
+#projectsText {
+    display: none;
+    padding-left: 10px;
+    max-width: 624px;
+}
+
+#projectsText dt {
+    font-weight: bold;
+}
+
+#projectsText dd {
+    font-style: italic;
+
+}
+
+#contactText {
+    display: none;
+    padding-left: 10px;
+    max-width: 624px;
 }
 
 #me {
@@ -53,7 +80,7 @@ nav {
 
 nav a {
     font-weight: bold;
-    padding: 15px;
+    margin: 15px;
     text-decoration: none;
 }
 
@@ -68,11 +95,11 @@ nav a {
 
 @media only screen and (max-width: 780px) {
 
-    #homeWrap {
+    #wholeWrap {
         flex-direction: column;
     }
 
-    #homeText {
+    #homeText, #aboutMeText, #projectsText, #contactText {
         
         padding: 0 3%;
         text-align: center;

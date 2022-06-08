@@ -9,18 +9,75 @@
 </head>
 <body>
     <main>
-        <div id="homeWrap">
+        <div id="wholeWrap">
             <img id="me" src="./Me.jpg" alt="A picture of me">
-            <div id="homeText">
-                <h2>Hey there! I'm </h2>
-                <h1>Toby Playle-Mitchell</h1>
-                <p>A budding web-developer based in the Isle of Man. Thanks for visiting my portfolio site!</p>
-                <nav>
-                    <a href="./aboutMe.html">About Me</a>
-                    <a href="./projects.html">Projects</a>
-                    <a href="./contact.html">Contact</a>
-                </nav>
+            <div id="textWrap">
+                <div id="homeText">
+                    <h2>Hey there! I'm </h2>
+                    <h1>Toby Playle-Mitchell</h1>
+                    <p>A budding web-developer based in the Isle of Man. Thanks for visiting my portfolio site!</p>
+                    <nav>
+                        <a href=# onclick="toAboutMe()">About Me</a>
+                        <a href=# onclick="toProjects()">Projects</a>
+                        <a href=# onclick="toContact()">Contact</a>
+                    </nav>
 
+                </div>
+                <div id="aboutMeText">
+                    <h1>About Me</h1>
+                    <p>I'm Toby, I'm 28 and I live in the Isle of Man. In March of this year I decided
+                        to pursue a career change and started studying web development full time. Since then, I've been having
+                        a blast studying on Codecademy and look forward to devoting more time towards personal projects.
+                        <br>
+                        <br>
+
+                        When I'm not studying, you'll either find me spending time with my partner and our 2 children, 
+                        at the gym, playing guitar or playing video games!
+                    </p>
+                    <nav>
+                        <a href=# onclick="toHome()">Home</a>
+                        <a href=# onclick="toProjects()">Projects</a>
+                        <a href=# onclick="toContact()">Contact</a>
+                    </nav>
+
+                </div>
+                <div id="projectsText">
+                    <h1>Projects</h1>
+                    <p>As I haven't been developing for long, this list is quite small. However, I very much look forward to adding
+                         to this list!
+                    </p>
+                    <dl>
+                        <dt><a href="https://github.com/TobyPlayle/Would-You-Rather">Would You rather?</a></dt>
+                        <dd>This project combines 4 random elements to generate a would-you-rather question and allows the user
+                            to consider the following: 
+                            <br>
+                            What's scarier? 2 rhino-sized ducks or 68 scorpion-sized rhinos?
+                        </dd>
+                    </dl>
+                    <nav>
+                        <a href=# onclick="toAboutMe()">About Me</a>
+                        <a href=# onclick="toHome()">Home</a>
+                        <a href=# onclick="toContact()">Contact</a>
+                    </nav>
+
+                </div>
+                <div id="contactText">
+                    <h1>Contact Me</h1>
+                    <p>You can contact me via the following methods:
+                        <br>
+                        <br>
+                        Email: TP-M@hotmail.co.uk
+                        <br>
+                        Mobile: +44 7624 354725
+
+                    </p>
+                    <nav>
+                        <a href=# onclick="toAboutMe()">About Me</a>
+                        <a href=# onclick="toProjects()">Projects</a>
+                        <a href=# onclick="toHome()">Home</a>
+                    </nav>
+
+                </div>
             </div>
         </div>
         
