@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif
+}
+
+main {
+    background: linear-gradient(rgba(0,212,255,1) 0%, rgba(255,255,255,1) 69%, rgba(255,255,255,1) 100%);
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#homeWrap {
+    display: flex;
+    align-items: center;
+}
+
+#homeText {
+    
+    padding-left: 10px
+}
+
+#homeText h2 {
+    margin-bottom: 2%;
+}
+
+#homeText h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+#me {
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+}
+
+nav {
+    text-align: center;
+    padding-top: 3.5%;
+    max-width: 94%;
+    min-width: 295px;
+}
+
+nav a {
+    font-weight: bold;
+    padding: 15px;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1070px) {
+
+    #homeText h1 {
+        font-size: 3rem;
+    }
+
+
+}
+
+@media only screen and (max-width: 780px) {
+
+    #homeWrap {
+        flex-direction: column;
+    }
+
+    #homeText {
+        
+        padding: 0 3%;
+        text-align: center;
+    }
+
+    nav {
+        max-width: 100%;
+    }
+
+
+}
+
+@media only screen and (max-width: 488px) {
+
+
+    #homeText h1{
+        font-size: 2.5rem;
+    }
+
+    #me {
+        width: 80%;
+        height: auto;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 406px) {
+
+   
+
+
+    #homeText h1{
+        font-size: 2rem;
+    }
+
+
+
+
+}
